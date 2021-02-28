@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <!-- First -->
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.cookies_in_servlet.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.cookies_in_servlet.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+    <!-- ========================================== -->
+<!--    Second-->
+    <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.cookiesLoginAndLogout.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.cookiesLoginAndLogout.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.cookiesLoginAndLogout.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+<!--    Third: Hidden Form-->
+    <servlet>
+        <servlet-name>hidden-s1</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.hiddenForm.HiddenFirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hidden-s1</servlet-name>
+        <url-pattern>/hidden-servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>hidden-s2</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.hiddenForm.HiddenSecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hidden-s2</servlet-name>
+        <url-pattern>/hidden-servlet2</url-pattern>
+    </servlet-mapping>
+<!--    Forth: URL Rewriting-->
+    <servlet>
+        <servlet-name>url-s1</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.url_rewriting.UrlFirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>url-s1</servlet-name>
+        <url-pattern>/url-servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>url-s2</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.url_rewriting.UrlSecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>url-s2</servlet-name>
+        <url-pattern>/url-servlet2</url-pattern>
+    </servlet-mapping>
+<!--    Fifth: HTTP Session-->
+    <servlet>
+        <servlet-name>http-s1</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.http_session.HttpFirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>http-s1</servlet-name>
+        <url-pattern>/http-servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>http-s2</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.http_session.HttpSecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>http-s2</servlet-name>
+        <url-pattern>/http-servlet2</url-pattern>
+    </servlet-mapping>
+<!--    Sixth: Session login and logout-->
+    <servlet>
+        <description></description>
+        <display-name>SessionLoginServlet</display-name>
+        <servlet-name>SessionLoginServlet</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.sessionLoginAndLogout.SessionLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionLoginServlet</servlet-name>
+        <url-pattern>/SessionLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>SessionProfileServlet</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.sessionLoginAndLogout.SessionProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionProfileServlet</servlet-name>
+        <url-pattern>/SessionProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>SessionLogoutServlet</servlet-name>
+        <servlet-class>com.iitu.JavaEE_4.sessionLoginAndLogout.SessionLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionLogoutServlet</servlet-name>
+        <url-pattern>/SessionLogoutServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
